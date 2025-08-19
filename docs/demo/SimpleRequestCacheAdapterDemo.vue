@@ -90,7 +90,7 @@ setInterval(() => {
 </script>
 
 <style lang="scss" scoped>
-@import './styles.scss';
+
 .simple-request-cache-adapter-demo {
     .controls {
         display: flex;

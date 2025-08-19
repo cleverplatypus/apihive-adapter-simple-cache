@@ -1,12 +1,18 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    server: {
+      port: 5174
+    }
+  },
   base: '/apihive-adapter-simple-cache/',
-  title: "Simple Request Cache Adapter",
-  description: "A simple, browser-oriented caching adapter for APIHive.",
+  title: 'Simple Request Cache Adapter',
+  description: 'A simple, browser-oriented caching adapter for APIHive.',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: 'images/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started' },
@@ -14,13 +20,8 @@ export default defineConfig({
     ],
 
     sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Getting Started', link: '/getting-started' },
-          { text: 'Demo', link: '/demo' }
-        ]
-      }
+      { text: 'Getting Started', link: '/getting-started' },
+      { text: 'Demo', link: '/demo' }
     ],
 
     socialLinks: [
@@ -28,4 +29,4 @@ export default defineConfig({
       { icon: 'npm', link: 'https://www.npmjs.com/package/@apihive/adapter-simple-cache' }
     ]
   }
-})
+});

@@ -764,6 +764,10 @@ ansi-styles@^6.1.0:
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-6.2.1.tgz#0e62320cf99c21afff3b3012192546aacbfb05c5"
   integrity sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==
 
+"apihive-common-docs-assets@git+https://github.com/cleverplatypus/apihive-common-docs-assets.git":
+  version "0.0.1"
+  resolved "git+https://github.com/cleverplatypus/apihive-common-docs-assets.git#589726ee5a8a1b98f580d5e9ab9b286829aedc33"
+
 assertion-error@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/assertion-error/-/assertion-error-2.0.1.tgz#f641a196b335690b1070bf00b6e7593fec190bf7"

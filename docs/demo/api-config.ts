@@ -1,4 +1,4 @@
-import { APIConfig } from "@apihive/core";
+import type { APIConfig } from "@apihive/core";
 
 export const endpointParamsConfig : Record<string, Record<string, { values : any[] }>> = {
     userById : {

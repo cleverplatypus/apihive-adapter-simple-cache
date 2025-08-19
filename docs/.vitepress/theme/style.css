@@ -24,7 +24,7 @@
  *
  *   The soft color must be semi transparent alpha channel. This is crucial
  *   because it allows adding multiple "soft" colors on top of each other
- *   to create an accent, such as when having inline code block inside
+ *   to create a accent, such as when having inline code block inside
  *   custom containers.
  *
  * - `default`: The color used purely for subtle indication without any
@@ -43,16 +43,16 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
-:root {
+ :root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: var(--vp-c-indigo-1);
-  --vp-c-brand-2: var(--vp-c-indigo-2);
-  --vp-c-brand-3: var(--vp-c-indigo-3);
-  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+  --vp-c-brand-1: var(--vp-c-yellow-1);
+  --vp-c-brand-2: var(--vp-c-yellow-2);
+  --vp-c-brand-3: var(--vp-c-yellow-3);
+  --vp-c-brand-soft: var(--vp-c-yellow-soft);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
@@ -77,7 +77,7 @@
 :root {
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: var(--vp-c-brand-3);
+  --vp-button-brand-bg: var(--vp-c-brand-2);
   --vp-button-brand-hover-border: transparent;
   --vp-button-brand-hover-text: var(--vp-c-white);
   --vp-button-brand-hover-bg: var(--vp-c-brand-2);
@@ -92,18 +92,44 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe 30%,
-    #41d1ff
-  );
-
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
-  );
+  --vp-home-hero-name-background: var(--vp-c-yellow-1);
   --vp-home-hero-image-filter: blur(44px);
+  
+  .demo-button {
+    max-height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info.custom-block:has(.demo-button) {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    *:first-child {
+      flex: 0 1;
+    }
+    .custom-block-title {
+      display: none;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  /*resets line-height of mermaid diagrams*/
+  .vp-doc .mermaid p { 
+    line-height: unset;
+  }
+
+  .VPHero {
+    .VPImage {
+      filter: drop-shadow(0px 0px 100px #ffffff);
+    }
+  }
+  .VPNavBarTitle {
+    .VPImage {
+      filter: drop-shadow(0px 0px 1px #ffffff);
+    }
+  }
 }
 
 @media (min-width: 640px) {

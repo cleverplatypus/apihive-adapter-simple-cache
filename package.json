@@ -28,7 +28,9 @@
     "printWidth": 120,
     "tabWidth": 2
   },
-  "dependencies": {},
+  "dependencies": {
+    "apihive-common-docs-assets": "git+https://github.com/cleverplatypus/apihive-common-docs-assets.git"
+  },
   "devDependencies": {
     "@apihive/core": ">=1.0.0-beta.3",
     "fake-indexeddb": "^6.1.0",
