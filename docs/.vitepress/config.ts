@@ -23,8 +23,8 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/cleverplatypus/apihive-adapter-simple-request-cache' },
-      { icon: 'npm', link: 'https://www.npmjs.com/package/@apihive/adapter-simple-request-cache' }
+      { icon: 'github', link: 'https://github.com/cleverplatypus/apihive-adapter-simple-cache' },
+      { icon: 'npm', link: 'https://www.npmjs.com/package/@apihive/adapter-simple-cache' }
     ]
   }
 })

@@ -1,6 +1,6 @@
 {
   "name": "@apihive/adapter-simple-cache",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "A simple request caching adapter for APIHive",
   "main": "lib/index.js",
   "module": "./lib/index.js",

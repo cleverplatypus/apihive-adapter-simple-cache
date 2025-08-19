@@ -176,7 +176,7 @@ export type SimpleRequestCacheAdapterOptions = {
 };
 
 export default class SimpleRequestCacheAdapter implements Adapter {
-  readonly name = '@apihive/adapter-simple-request-cache';
+  readonly name = '@apihive/adapter-simple-cache';
   readonly priority: AdapterPriority = {
     requestInterceptor: 0,
     responseInterceptor: 0,

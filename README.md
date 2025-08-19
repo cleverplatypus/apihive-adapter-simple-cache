@@ -1,4 +1,4 @@
-# @apihive/adapter-simple-request-cache
+# @apihive/adapter-simple-cache
 
 A simple, browser-oriented caching adapter for APIHive. It caches successful JSON/text responses in IndexedDB keyed by the request hash.
 
@@ -13,4 +13,4 @@ A simple, browser-oriented caching adapter for APIHive. It caches successful JSO
 # peer dependency
 npm install @apihive/core
 # adapter
-npm install @apihive/adapter-simple-request-cache
+npm install @apihive/adapter-simple-cache

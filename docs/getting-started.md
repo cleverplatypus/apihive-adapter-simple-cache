@@ -4,15 +4,15 @@
 
 ::: code-group
 ```bash [yarn]
-yarn add @apihive/adapter-simple-request-cache
+yarn add @apihive/adapter-simple-cache
 ```
 
 ```bash [npm]
-npm install @apihive/adapter-simple-request-cache
+npm install @apihive/adapter-simple-cache
 ```
 
 ```bash [jsr]
-jsr add @apihive/adapter-simple-request-cache
+jsr add @apihive/adapter-simple-cache
 ```
 :::
 
@@ -20,7 +20,7 @@ jsr add @apihive/adapter-simple-request-cache
 
 ```ts
 import { HTTPRequestFactory } from '@apihive/core';
-import SimpleRequestCacheAdapter from '@apihive/adapter-simple-request-cache';
+import SimpleRequestCacheAdapter from '@apihive/adapter-simple-cache';
 
 
 const requestFactory = new HTTPRequestFactory()
@@ -50,7 +50,7 @@ The filter callback is only called when the request is not explicitly cached at 
 
 ```ts
 import { HTTPRequestFactory, type APIConfig } from '@apihive/core';
-import SimpleRequestCacheAdapter, { type SimpleRequestCacheAdapterOptions } from '@apihive/adapter-simple-request-cache';
+import SimpleRequestCacheAdapter, { type SimpleRequestCacheAdapterOptions } from '@apihive/adapter-simple-cache';
 
 const api: APIConfig = {
     name : 'default',
