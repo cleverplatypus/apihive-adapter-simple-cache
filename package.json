@@ -1,0 +1,40 @@
+{
+  "name": "@apihive/adapter-simple-request-cache",
+  "version": "1.0.0-beta.1",
+  "description": "A simple request caching adapter for APIHive",
+  "main": "lib/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public",
+    "tag": "beta"
+  },
+
+  "author": "Nicola Dal Pont",
+  "license": "MIT",
+  "peerDependencies": {
+    "@apihive/core": ">=1.0.0-beta.3 <1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@apihive/core": {
+      "optional": false
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@apihive/core": ">=1.0.0-beta.3 <1.0.0",
+    "typescript": "^5.4.0",
+    "rimraf": "^6.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  }
+}
