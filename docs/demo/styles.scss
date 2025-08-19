@@ -1,0 +1,40 @@
+@import url("https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.conditional.amber.min.css");
+@import url('https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+.demo {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  .pico, &.pico {
+    .demo-button {
+      max-height: 2rem;
+    }
+    font-size: 0.8rem;
+
+    .v-enter-active,
+    .v-leave-active {
+      transition: opacity 0.5s ease;
+    }
+
+    .v-enter-from,
+    .v-leave-to {
+      opacity: 0;
+    }
+
+    input,
+    button,
+    input[type="file"]::file-selector-button {
+      font-size: 0.8rem;
+    }
+
+    // button,
+    // input[type="file"]::file-selector-button {
+    //   padding: 0.5em 0.75em;
+    // }
+
+    form {
+      width: 100%;
+    }
+  }
+}

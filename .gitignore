@@ -1,3 +1,5 @@
 node_modules/
 lib/
 _local/
+docs/.vitepress/dist
+docs/.vitepress/cache/

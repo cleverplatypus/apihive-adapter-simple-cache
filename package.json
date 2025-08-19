@@ -1,6 +1,6 @@
 {
-  "name": "@apihive/adapter-simple-request-cache",
-  "version": "1.0.0-beta.1",
+  "name": "@apihive/adapter-simple-cache",
+  "version": "1.0.0-beta.2",
   "description": "A simple request caching adapter for APIHive",
   "main": "lib/index.js",
   "module": "./lib/index.js",
@@ -11,22 +11,32 @@
     "access": "public",
     "tag": "beta"
   },
-
   "author": "Nicola Dal Pont",
   "license": "MIT",
   "peerDependencies": {
-    "@apihive/core": ">=1.0.0-beta.3 <1.0.0"
+    "@apihive/core": ">=1.0.0-beta.3"
   },
   "peerDependenciesMeta": {
     "@apihive/core": {
       "optional": false
     }
   },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "printWidth": 120,
+    "tabWidth": 2
+  },
   "dependencies": {},
   "devDependencies": {
-    "@apihive/core": ">=1.0.0-beta.3 <1.0.0",
+    "@apihive/core": ">=1.0.0-beta.3",
+    "fake-indexeddb": "^6.1.0",
+    "rimraf": "^6.0.0",
+    "sass": "^1.90.0",
     "typescript": "^5.4.0",
-    "rimraf": "^6.0.0"
+    "vitepress": "^2.0.0-alpha.11",
+    "vitest": "^3.2.4"
   },
   "files": [
     "lib"
@@ -35,6 +45,10 @@
     "clean": "rimraf lib",
     "build": "npm run clean && tsc -p tsconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   }
 }
