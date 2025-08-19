@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/apihive-adapter-simple-cache/',
   title: "Simple Request Cache Adapter",
   description: "A simple, browser-oriented caching adapter for APIHive.",
   themeConfig: {
