@@ -26,9 +26,6 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Run JSDoc
-        run: yarn docs:jsdoc
-
       - name: Build VitePress site
         run: yarn docs:build
 
