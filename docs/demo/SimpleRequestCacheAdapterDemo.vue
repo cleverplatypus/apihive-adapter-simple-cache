@@ -38,13 +38,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue';
-import controller from './demo-controller';
+import { onBeforeMount, ref, watch } from 'vue';
 import model from './demo-model';
+import DemoController from './demo-controller';
 
 const flashResult = ref(false);
 const flashFetchCount = ref(false);
 const currentCountDown = ref(-1);
+let controller: DemoController;
+
+onBeforeMount(() => {
+    controller = new DemoController();
+})
 
 watch(() => model.fetchCount, () => {
     flashFetchCount.value = model.fetchCount > 0;

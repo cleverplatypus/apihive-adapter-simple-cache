@@ -6,7 +6,7 @@ import apiConfig, { endpointParamsConfig } from './api-config';
 import model from './demo-model';
 
 
-class DemoController {
+export default class DemoController {
     private factory : HTTPRequestFactory;
 
     constructor() {
@@ -64,4 +64,3 @@ class DemoController {
     }
 }
 
-export default new DemoController();
