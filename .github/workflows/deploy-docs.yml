@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: yarn
 
+      - name: Remove old docs assets
+        run: yarn remove apihive-common-docs-assets && yarn add git+https://github.com/cleverplatypus/apihive-common-docs-assets.git
+
       - name: Build VitePress site
         run: yarn docs:build
 
