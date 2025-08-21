@@ -2,7 +2,7 @@
 title: Demo
 ---
 
-# DEMO: Simple Request Cache Adapter
+# DEMO: Cache Monitoring
 
 Here's a simple demo of how to use the simple request cache adapter.
 
@@ -20,5 +20,5 @@ Requests for the getUserById endpoint are cached for 30 seconds, while requests 
 </ClientOnly>
 
 ::: code-group
-<<< ./api-config.ts{9} [API Config]
-<<< ./demo-controller.ts [Demo Controller]
+<<< ./api-config.ts{22} [API Config]
+<<< ./demo-controller.ts{21} [Demo Controller]

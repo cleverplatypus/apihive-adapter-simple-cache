@@ -214,7 +214,7 @@ export default class SimpleRequestCacheAdapter implements Adapter {
 
   getRequestInterceptors(): RequestInterceptor[] {
     return [
-      async (config, controls) => {
+      async ({config, controls}) => {
         await this.readyPromise;
 
         const { ttlSeconds, hashBody } = this.resolveCacheMetaConfig(config.meta);
@@ -248,11 +248,8 @@ export default class SimpleRequestCacheAdapter implements Adapter {
     ];
   }
 
-  getResponseInterceptors(): (
-    | ResponseInterceptor
-    | { interceptor: ResponseInterceptor; skipTransformersOnReturn?: boolean }
-  )[] {
-    const interceptor: ResponseInterceptor = async (response, config, controls) => {
+  getResponseInterceptors(): ResponseInterceptor[] {
+    const interceptor: ResponseInterceptor = async ({response, config, controls}) => {
       await this.readyPromise;
       const { ttlSeconds, hashBody } = this.resolveCacheMetaConfig(config.meta);
       if (!ttlSeconds) return;

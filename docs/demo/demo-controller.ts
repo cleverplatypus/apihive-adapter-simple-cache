@@ -17,9 +17,8 @@ export default class DemoController {
         };
         this.factory = new HTTPRequestFactory()
             .withAPIConfig(apiConfig)
-            .use(adaptersFeature);
-
-        this.factory.withAdapter(new SimpleRequestCacheAdapter());
+            .use(adaptersFeature)
+            .withAdapter(new SimpleRequestCacheAdapter());
 
         watch(() => [model.currentEndpoint, model.currentEndpointParams], () => {
             model.currentRequestHash = '';

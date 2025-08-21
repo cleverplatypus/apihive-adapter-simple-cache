@@ -1,6 +1,6 @@
 {
   "name": "@apihive/adapter-simple-cache",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "A simple request caching adapter for APIHive",
   "main": "lib/index.js",
   "module": "./lib/index.js",
@@ -28,12 +28,11 @@
     "printWidth": 120,
     "tabWidth": 2
   },
-  "dependencies": {
-    "apihive-common-docs-assets": "git+https://github.com/cleverplatypus/apihive-common-docs-assets.git"
-  },
   "devDependencies": {
     "@apihive/core": ">=1.0.0-beta.3",
+    "apihive-common-docs-assets": "git+https://github.com/cleverplatypus/apihive-common-docs-assets.git",
     "fake-indexeddb": "^6.1.0",
+    "oh-vue-icons": "^1.0.0-rc3",
     "rimraf": "^6.0.0",
     "sass": "^1.90.0",
     "typescript": "^5.4.0",

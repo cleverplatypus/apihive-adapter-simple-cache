@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Simple Request Cache"
+  name: "APIHive<br><small>Cache Adapter</small>"
   tagline: "A simple caching adapter for APIHive.<br>Compatible with most browsers and Deno."
   actions:
     - theme: brand

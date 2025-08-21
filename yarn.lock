@@ -3,11 +3,12 @@
 
 
 "@apihive/core@>=1.0.0-beta.3":
-  version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@apihive/core/-/core-1.0.0-beta.3.tgz#d1ba924e5ef777da31361c07446bdb455b8363cf"
-  integrity sha512-uRzdzj7tRApffvNPsU/KasomR4+urNfWMGJaU4XJRsQyu8f/ajIelfT40in4ubebyrWRnyW9lM7uJYeE14jWww==
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@apihive/core/-/core-1.0.0-beta.5.tgz#f40d8d3ff158592aaa2de40e922ffbd5ac9656a6"
+  integrity sha512-MJi3IfzdgHHhj2HMqaVTBWzLDtwUz1uIXCqVdth5zTTbqrGYonTNly/oyRe45QMHKDCcEZDnzGoCKSrnkpnhJA==
   dependencies:
     "@apihive/logger-facade" "^1.0.0"
+    apihive-common-docs-assets "git+https://github.com/cleverplatypus/apihive-common-docs-assets.git"
 
 "@apihive/logger-facade@^1.0.0":
   version "1.0.0"
@@ -766,7 +767,7 @@ ansi-styles@^6.1.0:
 
 "apihive-common-docs-assets@git+https://github.com/cleverplatypus/apihive-common-docs-assets.git":
   version "0.0.1"
-  resolved "git+https://github.com/cleverplatypus/apihive-common-docs-assets.git#589726ee5a8a1b98f580d5e9ab9b286829aedc33"
+  resolved "git+https://github.com/cleverplatypus/apihive-common-docs-assets.git#81b6bf690ae650cb192be11747f0cf8f62b3f3f7"
 
 assertion-error@^2.0.1:
   version "2.0.1"
@@ -1214,6 +1215,13 @@ node-addon-api@^7.0.0:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-7.1.1.tgz#1aba6693b0f255258a049d621329329322aad558"
   integrity sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==
+
+oh-vue-icons@^1.0.0-rc3:
+  version "1.0.0-rc3"
+  resolved "https://registry.yarnpkg.com/oh-vue-icons/-/oh-vue-icons-1.0.0-rc3.tgz#63be64dd0da11a1b278d612a4f2a25ba692628f6"
+  integrity sha512-+k2YC6piK7sEZnwbkQF3UokFPMmgqpiLP6f/H0ovQFLl20QA5V4U8EcI6EclD2Lt5NMQ3k6ilLGo8XyXqdVSvg==
+  dependencies:
+    vue-demi "^0.12.5"
 
 oniguruma-parser@^0.12.1:
   version "0.12.1"
@@ -1685,6 +1693,11 @@ vitest@^3.2.4:
     vite "^5.0.0 || ^6.0.0 || ^7.0.0-0"
     vite-node "3.2.4"
     why-is-node-running "^2.3.0"
+
+vue-demi@^0.12.5:
+  version "0.12.5"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.5.tgz#8eeed566a7d86eb090209a11723f887d28aeb2d1"
+  integrity sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==
 
 vue@^3.5.18:
   version "3.5.18"

@@ -1,22 +1,20 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "ES2020",
-    "moduleResolution": "Bundler",
-    "lib": ["ES2020", "DOM"],
-    "declaration": true,
-    "declarationMap": false,
-    "sourceMap": false,
-    "outDir": "lib",
-    "rootDir": "src",
-    "strict": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": false,
-    "isolatedModules": false,
-    "noEmitOnError": true
-  },
+  "type": "module",
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "lib"]
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "target": "ES2018",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true
+  },
+  "exclude": ["lib", "dist", "coverage", "node_modules"]
 }
+
